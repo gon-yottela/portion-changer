@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ツイッターカード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GonYottela">
+  <meta property="og:url" content="https://gon-yottela.github.io/cooking-converter/">
+  <meta property="og:title" content="Mr. COOKING CONVERTER">
+  <meta property="og:description" content="日本とアメリカの単位変換ツール（料理編）">
+  <meta property="og:image" content="https://gon-yottela.github.io/cooking-converter/img/twitter-card.png">
+
+  <title>分量変えるくん1号</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111525102-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111525102-8');
+</script>
+
+</head>
+<body>
+
+<!-- レシピ通りに入力する -->
+<section class="step1">
+  <div class="container">
+
+    <div class="direction">
+      <p>① レシピ通りに分量を入力！</p>
+    </div>
+
+    <div class="all">
+
+      <!-- 1列目 -->
+      <div class="column1">
+
+        <div class="item-box">
+          <input id="ri1" type="text" name="" placeholder="（例）にんじん">
+          <input id="r1" type="number" name="" placeholder="1">
+          <input id="rs1" type="text" name="" placeholder="本">
+        </div>
+
+        <div class="item-box">
+          <input id="ri2" type="text" name="" placeholder="（例）砂糖">
+          <input id="r2" type="number" name="" placeholder="1.5">
+          <input id="rs2" type="text" name="" placeholder="大さじ">
+        </div>
+
+        <div class="item-box">
+          <input id="ri3" type="text" name="" value="">
+          <input id="r3" type="number" name="">
+          <input id="rs3" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri4" type="text" name="" value="">
+          <input id="r4" type="number" name="">
+          <input id="rs4" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri5" type="number" name="" value="">
+          <input id="r5" type="number" name="">
+          <input id="rs5" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri6" type="number" name="" value="">
+          <input id="r6" type="number" name="">
+          <input id="rs6" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri7" type="number" name="" value="">
+          <input id="r7" type="number" name="">
+          <input id="rs7" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri8" type="number" name="" value="">
+          <input id="r8" type="number" name="">
+          <input id="rs8" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri9" type="number" name="" value="">
+          <input id="r9" type="number" name="">
+          <input id="rs9" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ri10" type="number" name="" value="">
+          <input id="r10" type="number" name="">
+          <input id="rs10" type="text" name="">
+        </div>
+
+
+
+      </div> <!--column1 -->
+
+      <!-- 2列目 -->
+      <div class="column2">
+
+        <div class="hint-wrap">
+          <div id="hint" class="hint">
+            <p><i class="far fa-question-circle"></i> 分数 → 小数のヒント</p>
+          </div>
+
+          <div class="hint-box">
+            <!-- ヒントの内容 -->
+            <div id="balloon" class="balloon hide">
+              <div class="balloon2-top">
+                <div class="hint-left">
+                  <p><span>1/2</span> = 0.5</p>
+                  <p><span>1/4</span> = 0.25</p>
+                  <p><span>1/8</span> = 0.125</p>
+                </div>
+                <div class="hint-right">
+                  <p><span>1/3</span> = 0.333</p>
+                  <p><span>2/3</span> = 0.666</p>
+                  <p><span>3/4</span> = 0.75</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear-btn">
+          <span id="clear-btn1">クリア</span>
+        </div>
+
+      </div>
+
+
+    </div> <!-- all -->
+
+    <!-- ヒントをまとめるdiv -->
+
+
+  </div> <!-- container終わり -->
+</section>
+
+<!-- 変換エリア -->
+<section class="step2">
+  <div class="container">
+    <div class="arrow">
+      <i class="fas fa-caret-down"></i>
+    </div>
+    <div class="direction">
+      <p>②
+      <input id="original-portion" type="number" placeholder="(例) 1">
+      人前を
+      <input id="converted-portion" type="number" placeholder="4">
+      人前に
+      <span id="convert-btn" class="btn">変換</span>
+      ！</p>
+    </div>
+
+    <!-- スマホ用 -->
+    <div class="hidden-direction">
+      <div class="two">
+        <p>②</p>
+      </div>
+      <div class="text">
+        <input id="original-portion" type="number" placeholder="(例) 1">
+        <p>人前を
+        <input id="converted-portion" type="number" placeholder="4">
+        人前に
+        <span id="convert-btn" class="btn">変換</span>
+        ！</p>
+      </div>
+    </div>
+
+    <div class="arrow">
+      <i class="fas fa-caret-down"></i>
+    </div>
+  </div>
+</section>
+
+<!-- 結果表示 -->
+<section class="step3">
+  <div class="container">
+
+    <div class="direction">
+      <p>③ この分量で作ってね！</p>
+    </div>
+
+    <div class="result">
+
+      <div class="column1">
+        <div class="item-box">
+          <input id="ai1" type="text" name="">
+          <input id="a1" type="number" name="">
+          <input id="as1" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai2" type="text" name="" value="">
+          <input id="a2" type="number" name="">
+          <input id="as2" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai3" type="text" name="" value="">
+          <input id="a3" type="number" name="">
+          <input id="as3" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai4" type="text" name="" value="">
+          <input id="a4" type="number" name="">
+          <input id="as4" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai5" type="number" name="" value="">
+          <input id="a5" type="number" name="">
+          <input id="as5" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai6" type="number" name="" value="">
+          <input id="a6" type="number" name="">
+          <input id="as6" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai7" type="number" name="" value="">
+          <input id="a7" type="number" name="">
+          <input id="as7" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai8" type="number" name="" value="">
+          <input id="a8" type="number" name="">
+          <input id="as8" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai9" type="number" name="" value="">
+          <input id="a9" type="number" name="">
+          <input id="as9" type="text" name="">
+        </div>
+
+        <div class="item-box">
+          <input id="ai10" type="number" name="" value="">
+          <input id="a10" type="number" name="">
+          <input id="as10" type="text" name="">
+        </div>
+
+
+
+      </div> <!--column1 -->
+
+      <!-- 3列目 = クリアボタン -->
+      <div class="column2">
+        <div class="clear-btn">
+          <span id="clear-btn2">クリア</span>
+        </div>
+      </div>
+
+
+    </div> <!-- result終わり -->
+  </div> <!-- container終わり -->
+</section>
+
+
+
+</main>
+<footer>
+  <p>&copy; 2019 分量変えるくん1号 by <a href="https://twitter.com/GonYottela">ゴン (Gon)</a></p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
