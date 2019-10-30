@@ -96,15 +96,15 @@ $(function() {
       $('#a7').val('');
     }
 
-    if (converted8 === 0) {
+    if (r8 === 0) {
       $('#a8').val('');
     }
 
-    if (converted9 === 0) {
+    if (r9 === 0) {
       $('#a9').val('');
     }
 
-    if (converted10 === 0) {
+    if (r10 === 0) {
       $('#a10').val('');
     }
 
