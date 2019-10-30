@@ -29,11 +29,11 @@ $(function() {
 
 
   // 計算ボタン
-  $('#convert-btn').click(function() {
+  $('.btn').click(function() {
 
     // 〇人前の数値を取得
-    const originalPortion = $('#original-portion').val();
-    const convertedPortion = $('#converted-portion').val();
+    const originalPortion = $('.original-portion').val();
+    const convertedPortion = $('.converted-portion').val();
 
     // レシピ通りの分量の数値を取得
     const r1 = $('#r1').val();
