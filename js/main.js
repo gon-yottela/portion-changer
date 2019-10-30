@@ -134,7 +134,7 @@ $(function() {
     $('#as10').val($('#rs10').val());
 
 
-  });
+  }).css('cursor', 'pointer');
 
 
 
