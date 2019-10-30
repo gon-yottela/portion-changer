@@ -136,8 +136,8 @@ $(function() {
 
   }).css('cursor', 'pointer');
 
-
-
+  // クリックイベントが発生しないので…これ書けって書いてあった
+  $('.container').on('click', function(){});
 
 
 
