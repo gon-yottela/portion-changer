@@ -15,8 +15,6 @@
     font-size: 16px;
   }
 
-
-
   .all {
     flex-direction: column;
   }
@@ -34,6 +32,7 @@
   }
 
 
+/* ---------------------------------------- */
 
   /* 入力欄をパーセンテージで指定 */
   .step1 input:first-child,
@@ -44,14 +43,12 @@
   .step1 input:nth-child(2),
   .step3 input:nth-child(2) {
     width: 25%;
-
   }
 
   .step1 input:nth-child(3),
   .step3 input:nth-child(3) {
     width: 25%;
   }
-
 
   .step2 input {
     width: 60px;
@@ -74,35 +71,14 @@
     padding: 0;
   }
 
-  /* .step2 .direction {
-    display: none;
-  } */
 
-  .hidden-direction {
-    display: flex;
-    margin: 32px 0;
-  }
-
-  .hidden-direction p {
-    display: inline;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .two p {
-    position: relative;
-    top: 16px;
-    margin-right: 8px;
-  }
-
-
+/* ---------------------------------------- */
 
   /* ヒントの位置微調整 */
   .hint {
     margin: 6px 0 0 0;
     text-align: right;
   }
-
 
   /* ふきだしの位置を右側に & 位置調整 */
   .balloon2-top:before {
@@ -116,7 +92,5 @@
   .balloon {
     margin: 0;
   }
-
-
 
 }
