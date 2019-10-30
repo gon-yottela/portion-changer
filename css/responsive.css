@@ -74,9 +74,9 @@
     padding: 0;
   }
 
-  .step2 .direction {
+  /* .step2 .direction {
     display: none;
-  }
+  } */
 
   .hidden-direction {
     display: flex;
