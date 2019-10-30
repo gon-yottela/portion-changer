@@ -13,7 +13,7 @@ $(function() {
     function() {
       $('#hint .fa-question-circle').css('color', '#af977b');
     }
-  )
+  );
 
 
   // 1つ目のクリアボタン
