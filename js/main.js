@@ -134,10 +134,7 @@ $(function() {
     $('#as10').val($('#rs10').val());
 
 
-  });
-
-
-  // .css('cursor', 'pointer');
+  }).css('cursor', 'pointer');
 
   // クリックイベントが発生しないので…これ書けって書いてあった
   // $('.container').on('click', function(){});
