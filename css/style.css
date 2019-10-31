@@ -317,6 +317,19 @@ input::placeholder {
 
 /* ---------------------------------------- */
 
+.ad-pc {
+  text-align: center;
+  padding: 24px 0;
+  background-color: #faf6f0;
+}
+
+.ad-sp {
+  display: none;
+}
+
+
+/* ---------------------------------------- */
+
 footer {
   background-color: #716557;
   text-align: center;

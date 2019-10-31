@@ -94,4 +94,18 @@
     margin: 0;
   }
 
+
+/* ---------------------------------------- */
+
+  .ad-pc {
+    display: none;
+  }
+
+  .ad-sp {
+    text-align: center;
+    padding: 24px 0;
+    background-color: #faf6f0;
+  }
+
+
 }
