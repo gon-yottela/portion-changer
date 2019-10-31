@@ -102,6 +102,7 @@
   }
 
   .ad-sp {
+    display: block;
     text-align: center;
     padding: 24px 0;
     background-color: #faf6f0;
