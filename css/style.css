@@ -9,7 +9,6 @@
   font-family: Meiryo, sans-serif;
 }
 
-
 /* ---------------------------------------- */
 
 .container {
@@ -39,7 +38,6 @@
   padding: 48px 0;
 }
 
-
 /* ---------------------------------------- */
 
 /* 指示 */
@@ -64,7 +62,6 @@
   padding-bottom: 8px;
 }
 
-
 /* ---------------------------------------- */
 
 .column1 {
@@ -81,11 +78,9 @@
   justify-content: flex-end;
 }
 
-
 /* ---------------------------------------- */
 
 /* ヒント */
-
 .hint {
   margin-top: 8px;
   margin-left: -35px;
@@ -140,7 +135,6 @@
 }
 
 /* ふきだし（サルワカさんより） */
-
 .balloon2-top {
   position: relative;
   display: flex;
@@ -178,7 +172,6 @@
   z-index: 1;
 }
 
-
 /* ---------------------------------------- */
 
 /* クリアボタン */
@@ -210,7 +203,6 @@
   top: 3px;
 }
 
-
 /* ---------------------------------------- */
 
 /* 入力ボックス */
@@ -230,7 +222,6 @@ input::placeholder {
   color: #bbb0a3;
 }
 
-
 /* レシピ通りの材料と単位のボックスをオレンジに */
 .step1 input:first-child {
   width: 180px;
@@ -243,14 +234,12 @@ input::placeholder {
   background-color: #ffefcf;
 }
 
-
 /* 数量のボックスは白背景 */
 .step1 input:nth-child(2),
 .step3 input:nth-child(2) {
   width: 100px;
   margin-right: 10px;
 }
-
 
 /* 変換後の材料と単位のボックスをグリーンに */
 .step3 input:first-child {
@@ -264,12 +253,10 @@ input::placeholder {
   background-color: #e3f2e3;
 }
 
-
-/* ふきだしを隠すCSS */
+/* ふきだしを隠す */
 .hide {
   display: none;
 }
-
 
 /* ---------------------------------------- */
 
@@ -314,7 +301,6 @@ input::placeholder {
   box-shadow: none;
 }
 
-
 /* ---------------------------------------- */
 
 .ad-pc {
@@ -326,7 +312,6 @@ input::placeholder {
 .ad-sp {
   display: none;
 }
-
 
 /* ---------------------------------------- */
 
