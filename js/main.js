@@ -15,20 +15,17 @@ $(function() {
     }
   );
 
-
   // 1つ目のクリアボタン
   $('#clear-btn1').click(function() {
     $('.step1 input').val('');
   });
-
 
   // 2つ目のクリアボタン
   $('#clear-btn2').click(function() {
     $('.result input').val('');
   });
 
-
-  // 計算ボタン（パソコンのクリック）
+  // 計算ボタン
   $('.btn').click(function() {
 
     // 〇人前の数値を取得
@@ -124,7 +121,6 @@ $(function() {
     $('#ai9').val($('#ri9').val());
     $('#ai10').val($('#ri10').val());
 
-
     // 入力した単位を反映させる
     $('#as1').val($('#rs1').val());
     $('#as2').val($('#rs2').val());
@@ -136,8 +132,5 @@ $(function() {
     $('#as8').val($('#rs8').val());
     $('#as9').val($('#rs9').val());
     $('#as10').val($('#rs10').val());
-
   });
-
-
 });
